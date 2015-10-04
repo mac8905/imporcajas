@@ -1,0 +1,17 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+footer {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.login {
+  background-image: url("../images/logo_mod1.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 350px;
+}

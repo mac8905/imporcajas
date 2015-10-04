@@ -1,0 +1,32 @@
+.cuerpo {
+  padding-top: 60px;
+  background-image: url("../images/logo_agua.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+footer {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.btn-group{
+	padding-bottom: 20px;
+}
+
+.dropdown{
+	width: 270px;
+	text-align: center;
+}
+
+.eliminar{
+	color: red;
+	vertical-align: middle;
+  float: none;
+}
+
+.agregar{
+	color: green;
+	margin-top: 20px;
+}

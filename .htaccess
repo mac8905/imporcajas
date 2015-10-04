@@ -1,0 +1,18 @@
+# El asterisco es para hacer comentarios.
+# El archivo debe llamarse   .htaccess   sin extencion .txt ni nada
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	# aqui es donde se especifican las carpetas css, img, js, fonts, etc...
+	RewriteCond $1 !^(index\.php|resources|css|js|fonts|images|robots\.txt)
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+	#¡¡¡ PILAS aqui WILMAR donde dice miSitio cambielo por el nombre de su sitio !!!
+	ErrorDocument 404 /CODEIGNITER_W/index.php
+</IfModule>
+
+# Con estas lineas de código estamos sacando el index.php de nuestro patrón de URL.
